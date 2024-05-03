@@ -10,6 +10,7 @@ import * as Joi from 'joi';
       isGlobal: true,
       validationSchema: Joi.object({
         PORT: Joi.number().required(),
+        HOST: Joi.string().required(),
         DATABASE_URL: Joi.string().required(),
       }),
     }),
